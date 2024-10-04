@@ -73,8 +73,10 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1abc9c;
-  --bs-link-hover-color: #15967d;
+  /* --bs-link-color: #1abc9c; */
+  --bs-link-color: #fff;
+  /* --bs-link-hover-color: #15967d; */
+  --bs-link-hover-color: #fff;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -11043,4 +11045,9 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+
+.pdf {
+  width: 100%;
+  aspect-ratio: 2 / 1;
 }
