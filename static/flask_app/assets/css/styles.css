@@ -4303,6 +4303,10 @@ input[type=button].btn-block {
   background-clip: border-box;
   border: 0.125rem solid rgba(0, 0, 0, 0.125);
   border-radius: 0.5rem;
+  margin: 0.25rem;
+}
+.card-secondary {
+  background-color: #0063b2;
 }
 .card > hr {
   margin-right: 0;
