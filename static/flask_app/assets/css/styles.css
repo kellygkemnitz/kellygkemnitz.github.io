@@ -102,8 +102,11 @@ address {
 ol,
 ul,
 dl {
+  list-style-type: disc;
+  margin: 10px 0;
   margin-top: 0;
   margin-bottom: 1rem;
+  padding-left: 20px;
 }
 
 ol ol,
@@ -152,7 +155,8 @@ sup {
 }
 
 a {
-  color: #9cc3d5;
+  /* color: #9cc3d5; */
+  color: #fff;
   text-decoration: none;
   background-color: transparent;
 }
@@ -6238,6 +6242,7 @@ button.bg-dark:focus {
 
 .d-flex {
   display: flex !important;
+  flex-direction: column;
 }
 
 .d-inline-flex {
@@ -10145,6 +10150,11 @@ form .row:first-child .floating-label-form-group {
   height: 2rem;
 }
 
+.experience {
+  padding-top: 6rem;
+  padding-bottom: 4.5rem;
+}
+
 .portfolio {
   padding-top: 6rem;
   padding-bottom: 4.5rem;
@@ -10180,4 +10190,10 @@ form .row:first-child .floating-label-form-group {
 
 .btn-social {
   margin-bottom: 0.5rem;
+}
+
+.subheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
