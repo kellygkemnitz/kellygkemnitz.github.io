@@ -14,7 +14,7 @@ def robots_txt():
 
 @app.route('/sitemap.xml')
 def sitemap_xml():
-    return send_from_directory(app.static_folder, 'sitemap.xml'
+    return send_from_directory(app.static_folder, 'sitemap.xml')
 
 if __name__ == "__main__":
     app.run(debug=True)
