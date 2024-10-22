@@ -1,0 +1,7 @@
+User-agent: Googlebot
+User-agent: AdsBot-Google
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.kellykemnitz.com/sitemap.xml
