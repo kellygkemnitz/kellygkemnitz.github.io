@@ -1,0 +1,13 @@
+services:
+  kellykemnitz.com:
+    image: kellykemnitz.com:latest
+    container_name: kellykemnitz.com
+    networks:
+      - kellyraspberrypi-local
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+networks:
+  kellyraspberrypi-local:
+    external: true
