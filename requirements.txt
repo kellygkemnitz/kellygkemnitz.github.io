@@ -3,6 +3,8 @@ cffi==1.17.1
 click==8.1.7
 cryptography==43.0.1
 Flask==3.0.3
+gevent==24.10.3
+greenlet==3.1.1
 gunicorn==23.0.0
 itsdangerous==2.2.0
 Jinja2==3.1.4
@@ -10,3 +12,5 @@ MarkupSafe==3.0.1
 packaging==24.1
 pycparser==2.22
 Werkzeug==3.0.4
+zope.event==5.0
+zope.interface==7.1.1
