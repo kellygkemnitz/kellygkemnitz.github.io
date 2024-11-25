@@ -1,11 +1,11 @@
 services:
   kellykemnitz.com:
     image: kellykemnitz.com:latest
-    container_name: kellykemnitz.com
+    container_name: homepage
     networks:
       - kellyraspberrypi-local
     ports:
-      - "8000:8000"
+      - '8000:8000/tcp'
     restart: unless-stopped
 
 networks:
