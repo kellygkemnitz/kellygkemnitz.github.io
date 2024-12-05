@@ -15,4 +15,6 @@ COPY static static/
 COPY templates templates/
 COPY app.py .
 
-CMD ["gunicorn", "-b", "0.0.0.0:8000", "-w", "1", "-k", "gevent", "--worker-connections", "500", "--timeout", "120", "--keep-alive", "5", "--log-level", "info", "--access-logfile", "-", "app:app"]
+EXPOSE 8081
+
+CMD ["python3", "app"]
