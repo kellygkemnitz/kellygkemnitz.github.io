@@ -15,6 +15,4 @@ COPY static static/
 COPY templates templates/
 COPY app.py .
 
-EXPOSE 8000
-
 CMD ["python3", "app.py"]
