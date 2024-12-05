@@ -18,4 +18,4 @@ def sitemap_xml():
     return send_from_directory(app.static_folder, 'sitemap.xml')
 
 if __name__ == "__main__":
-    serve(app.run, host='0.0.0.0', port=8001)
+    serve(app, host='0.0.0.0', port=8000)
