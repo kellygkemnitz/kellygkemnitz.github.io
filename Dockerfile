@@ -1,4 +1,4 @@
-FROM python:3.12-slim-bookworm
+FROM python:3.12-slim
 
 WORKDIR /app
 
@@ -16,4 +16,4 @@ COPY static static/
 COPY templates templates/
 COPY app.py .
 
-CMD ["gunicorn", "-w", "4", "-b" "0.0.0.0:8000", "app:app"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8000", "app:app"]
