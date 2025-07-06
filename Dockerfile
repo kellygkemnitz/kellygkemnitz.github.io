@@ -8,7 +8,7 @@ SHELL ["/bin/bash", "-c"]
 ENV PATH="/opt/venv/bin:$PATH"
 
 COPY requirements.txt .
-#RUN pip install --upgrade pip
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -Ur requirements.txt
 
 COPY static static/
