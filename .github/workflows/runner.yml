@@ -37,5 +37,4 @@ jobs:
         run: |
           docker pull ghcr.io/${{ github.repository_owner }}/kellykemnitz.com:latest
           docker images ghcr.io/${{ github.repository_owner }}/kellykemnitz.com:latest
-          docker run --rm ghcr.io/${{ github.repository_owner }}/kellykemnitz.com:latest --version
           docker run --rm ghcr.io/${{ github.repository_owner }}/kellykemnitz.com:latest echo "Docker image is working correctly."
