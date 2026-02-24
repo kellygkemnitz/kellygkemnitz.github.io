@@ -1,23 +1,19 @@
-FROM python:3.12-slim
+FROM python:3.12-slim AS builder
+WORKDIR /app
 
-# Install system dependencies (if needed)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
-
-# Install Python deps first to leverage Docker layer caching
 COPY requirements.txt .
 RUN pip install --upgrade pip \
-    && pip install --no-cache-dir -r requirements.txt
+    && pip install --no-cache-dir --prefix=/install -r requirements.txt
 
-# Copy application code
+COPY --from=builder /install /usr/local
 COPY static/ static/
 COPY templates/ templates/
 COPY app.py .
 
-# Create non-root user
 RUN useradd -m appuser
 USER appuser
 
