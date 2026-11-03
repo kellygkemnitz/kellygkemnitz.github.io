@@ -48,5 +48,5 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
       
       - name: Deploy
-        working-directory: ${{ var.DOCKER_COMPOSE_DIR }}
+        working-directory: ${{ vars.DOCKER_COMPOSE_DIR }}
         run: docker compose up -d --pull always homepage
